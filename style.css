@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka One");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Righteous&family=Sarala&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    background: #ff7418;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logoazapfy{   
+    margin-top: 40px;
+    width: 250px;
+}
+
+.formulario-orcamento{
+   background-color:white;
+   border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0, 0, 0.3);
+    width: 650px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.titulo-orcamento{
+    background-color: white;
+    padding: 30px;
+}
+
+.form-orcamento{
+    padding: 20px;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input:hover{
+   background-color: #FFFFE6;
+    transition: all linear ;
+}
+.form-control input{
+    border: 2px solid rgba(255,116,24,1);
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+ .input_alternativas {
+  margin-bottom: 10px;
+  margin-top: 2px;
+ }
+
+ .input_alternativas input{
+    width: 40px;
+ }
+
+.button{
+    background-color:#ff7418;
+    border: 2px solid rgba(255,116,24,1);
+    box-shadow: -2px 3px 5px rgba(255,116,24,1);
+    color: #fafafa;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.button:hover{
+    background-color: #CC5D12;
+    transition: all linear ;
+}
+
+.form-control small {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   visibility: hidden; 
+}
+
+
+
+
+
+
+
