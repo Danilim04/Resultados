@@ -141,14 +141,15 @@
             }
             else if ($desconto=="nao"){
                 $calculo_alimentacao_desconto_formatado = "Não possui desconto no sálario";
-                $calculo_alimentacao_desconto_anual_formatado = "Não possui desconto no sálario";
+                $calculo_alimentacao_desconto_anual_formatado = " Não possui desconto no sálario ";
             }
         }
         else if ($valealimentacao =="nao"){
             $calculo_alimentacao_formatado = "Não possui vale alimentação";
             $valealimentacao_anual_formatado = "Não possui vale alimentação";
             $calculo_alimentacao_desconto_formatado = "Não possui vale alimentação";
-            $calculo_alimentacao_desconto_anual = "Não possui vale alimentação";
+            $calculo_alimentacao_desconto_anual_formatado = "Não possui vale alimentação";
+            
 
         }
     
