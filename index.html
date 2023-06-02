@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de folha anual</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    
+    <div id="orcamento" class="formulario-orcamento">
+        <img class="logoazapfy" src="Logo Azapfy.png" alt="">
+        
+        <h1 class="titulo-orcamento">Calculo de Folha Anual</h1>
+        
+        <form class="form-orcamento" id="orcamentoForm" action="https://resultados-six.vercel.app/" method="post">       
+        
+            <div class="form-control"> 
+                <label for="username">Digite o Nome do Trabalhador</label>
+                <input  required placeholder="Digite o Nome..." type="text" id="name" name="name"> 
+            </div>
+     
+            <div class="form-control"> 
+                <label for="email">Digite o cargo do trabalhador</label>
+                <input required placeholder="Digite o cargo" type="text" id="email" name="cargo"> 
+            </div>
+        
+            <div class="form-control"> 
+                <label>O trabalhador é CLT?</label>                
+            </div>
+
+            <div class="input_alternativas">
+                <input  required type="radio" name="clt" value="sim">
+                <label for="">Sim</label> <br>
+                <input  required type="radio" name="clt" value="nao">
+                <label for="">Não</label>
+            </div>
+             
+            <div class="form-control"> 
+                <label for="text">Digite o salario Bruto</label>
+                <input required placeholder="Digite o salario" type="text" id="salario" name="salario"> 
+        
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">Digite o Numeros de Dias Trabalhados no Ano</label>
+                <input required placeholder="(O ano de 2023 tem 250 dias trabalhados)" type="number" id="" name="diastrabalhados"> 
+                
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">Digite o Ano De referencia</label>
+                <input required placeholder="Estamos no ano de 2023 " type="number" id="" name="ano"> 
+                
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">Digite a Carga Horaria diaria</label>
+                <input required placeholder="Digite a carga em horas de um dia trabalhado" type="text" id="" name="cargahoraria"> 
+                
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">O trabalhador possui Vale Transporte ?</label>
+            </div>
+
+            <div class="input_alternativas">
+                <input  required type="radio" name="valetransporte" value="sim">
+                <label for="">Sim</label> <br>
+                <input  required type="radio" name="valetransporte" value="nao">
+                <label for="">Não</label>
+            </div>
+           
+            <div class="form-control"> 
+                <label for="text">Digite o valor da tarifa</label>
+                <input placeholder="Digite o valor da tarifa (Se houver vale transporte)" type="text" id="" name="valordatarifa">                
+            </div> 
+            
+            <div class="form-control"> 
+                <label for="text">Valor tera desconto no salario ? </label>
+            </div>
+
+            <div class="input_alternativas">
+                <input   type="radio" name="descontotransporte" value="sim">
+                <label for="">Sim</label> <br>
+                <input   type="radio" name="descontotransporte" value="nao">
+                <label for="">Não</label>
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">Digite o valor do desconto ? </label>
+                <input placeholder="Digite o valor do desconto sem % (Se houver desconto)" type="text" id="" name="valordescontotrasnporte">                
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">O trabalhador possui Vale Alimentação ?</label>
+            </div>
+
+            <div class="input_alternativas">
+                <input  type="radio" name="valealimentacao" value="sim">
+                <label for="">Sim</label> <br>
+                <input  type="radio" name="valealimentacao" value="nao">
+                <label for="">Não</label>
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">Digite o percentual do vale no salario ? </label>
+                <input placeholder="Digite o valor do percentual (Se houver vale alimentação)" type="text" id="" name="valorconsumido">                
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">O vale tera desconto no salario bruto ? </label>                
+            </div>
+
+            <div class="input_alternativas">
+                <input  required type="radio" name="desconto" value="sim">
+                <label for="">Sim</label> <br>
+                <input  required type="radio" name="desconto" value="nao">
+                <label for="">Não</label>
+            </div>
+
+            <div class="form-control"> 
+                <label for="text">Digite o valor do desconto ? </label>
+                <input placeholder="Digite o valor do desconto sem % (Se houver desconto)" type="text" id="" name="valordesconto">                
+            </div>
+        
+            <button  href="exibir_dados.php" class="button" type="submit">Enviar</button>
+            
+            
+            </form>
+        
+        
+    
+    </div>
+        
+</body>
+</html>
